@@ -1,0 +1,197 @@
+:root {
+    --bg: grey;
+    --text: #fff0f0;
+    --line: #ebd4d4;
+    --last: #835858;
+    --box-shadow: 0 1px 5px rgba(250, 250, 250, 0.2),
+      0 1px 5px rgba(255, 255, 255, 0.3);
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: serif;
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+  }
+  .container {
+    margin: 30px auto;
+    width: 350px;
+  }
+  h2{
+    margin: 2px auto;
+  }
+  h1 {
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  h3 {
+    text-align: center;
+    padding: 5px;
+    margin: 40px 0 10px;
+    letter-spacing: 4px;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  h4 {
+    margin: 0;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  p {
+    color: var(--bg);
+    font-weight: bold;
+  }
+  .inc-exp-container {
+    background-color: var(--line);
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  .inc-exp-container > div {
+    flex: 1;
+    text-align: center;
+  }
+  .inc-exp-container > div:first-of-type {
+    border-right: 1px solid var(--last);
+  }
+  .money {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 5px 0;
+  }
+  .money.plus {
+    color: forestgreen;
+  }
+  .money.minus {
+    color: crimson;
+  }
+  label:nth-child(1) {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: normal;
+  }
+  input[type="text"],
+  input[type="number"] {
+    border: 1px solid var(--last);
+    border-radius: 5px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+  }
+  .btn {
+    cursor: pointer;
+    background-color: var(--line);
+    box-shadow: var(--box-shadow);
+    color: var(--bg);
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0 30px;
+    padding: 10px;
+    width: 50%;
+    transition: all .5s;
+  }
+  .btn:hover{
+    background: chocolate;
+    color: #fff;
+  }
+  .btn:focus,
+  .delete-btn:focus {
+    outline: none;
+  }
+  .list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  .list li {
+    background-color: var(--text);
+    color: var(--bg);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  .list li.plus {
+    border-right: 5px solid forestgreen;
+  }
+  .list li.minus {
+    border-right: 5px solid crimson;
+  }
+  .delete-btn {
+    cursor: pointer;
+    background-color: var(--line);
+    border: 0;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+  }
+  .list li:hover .delete-btn {
+    opacity: 1;
+  }
+  input[type="button"]{
+    width: 50%;
+    margin: auto;
+    transition: all .5s;
+  }
+  /* *************ionicons********** */
+  #icons{
+    padding: 5px;
+    background: deepskyblue;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    cursor: pointer;
+    transition: all .5s;
+    display: none;
+  }
+  #icons:hover{
+    background: darksalmon;
+    border-radius: 50%;
+
+  }
+  /* ***********styling show and hiding button****** */
+.shows{
+  position: absolute;
+  margin-left: 10%;
+  display: flex;
+  font-size: 1.5rem;
+}
+.shows #showLi{
+  color: #fff !important;
+  cursor: pointer;
+  font-size: 30px;
+  z-index: 1000;
+  right: -245px;
+  position: absolute;
+}
+.shows #hideLi{
+  display: none;
+  color: #fff !important;
+  cursor: pointer;
+  font-size: 30px;
+  position: absolute;
+  right: -245px;
+}

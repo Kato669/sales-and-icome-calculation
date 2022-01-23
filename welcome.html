@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT specialists</title>
+    <style>
+        #ions{
+            bottom: 20px;
+            right: 20px;
+            position: absolute;
+            background: deepskyblue;
+            padding: 10px;
+            transition: all .5s;
+            cursor: pointer;
+        }
+        #ions:hover{
+            background: dimgray;
+        }
+    </style>
+    <link rel="stylesheet" href="../css/sales.css">
+    <link rel="shortcut icon" href="ICT_Logo-01.png">
+</head>
+<body>
+    <section>
+        <header>
+           <p> &copy; <span id="span"></span>_ICT specialists <> Welcome to ICT specialists - Best ICT services for Any ICT problem </p>
+        </header>
+        <div class="min-header">
+            <h5>Welcome to ICT specialists</h5>
+        </div>
+        <div class="body">
+            <p>greetings</p>
+            <p>this is ICT specialists - providing special ICT services. proceed to manage your business with 'SMART SALES APP'. best wishes </p>
+            <p>Tel: (256)757041401</p>
+        </div>
+        <footer>
+            <h1>ICT specialists, OB plaza</h1>
+        </footer>
+    </section>
+    <a href="sales.html"><ion-icon name="arrow-forward-outline" id="ions"></ion-icon></a>
+    <!-- *******ionice font*********** -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+     <!-- *******end ionice font*********** -->
+    <script>
+        let span = document.getElementById('span');
+        span.innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid grey;
+    background: rgb(255, 123, 0);
+}
+header{
+    padding: 8px;
+    font-size: 15px;
+    background: #fff;
+}
+.min-header{
+    background: orangered;
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+.min-header h5{
+    padding: 8px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+    font-family: serif;
+    letter-spacing: 2px;
+    border-bottom: 3px solid;
+}
+.body p:nth-child(1){
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+}
+.body p:nth-child(2){
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    line-height: 25px;
+}
+.body p:nth-child(3){
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+footer{
+    background: orangered;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    font-family: serif;
+}
+
+/* *********ions******* */
